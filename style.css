@@ -431,27 +431,27 @@ footer {
 /* Media query dla telefonów (ekrany < 768px) */
 @media screen and (max-width: 768px) {
     header h1 {
-        font-size: 1.8em; /* Mniejszy rozmiar */
-        margin-left: 10px; /* Mniejszy margines */
+        font-size: 1.8em;
+        margin-left: 10px;
     }
 
     h2 {
-        font-size: 2em; /* Mniejszy rozmiar */
-        margin-bottom: 30px; /* Mniejszy margines */
+        font-size: 2em;
+        margin-bottom: 30px;
         margin-top: 30px;
     }
 
     h3 {
-        font-size: 1.5em; /* Mniejszy rozmiar */
+        font-size: 1.5em;
     }
 
     .ebook-item h3 {
-        font-size: 1.8em; /* Mniejszy rozmiar */
+        font-size: 1.8em;
         margin-bottom: 15px;
     }
 
     .ebook-item h4 {
-        font-size: 1.2em; /* Mniejszy rozmiar */
+        font-size: 1.2em;
         margin-bottom: 15px;
     }
 
@@ -461,21 +461,176 @@ footer {
     .package-deal p,
     .guarantee p,
     .history-content p {
-        font-size: 1.2em; /* Mniejszy rozmiar dla paragrafów */
-        line-height: 1.5; /* Mniejszy odstęp między liniami */
+        font-size: 1.2em;
+        line-height: 1.5;
         margin-bottom: 1.5em;
     }
 
     .package-deal .current-price {
-        font-size: 3em; /* Znacznie mniejszy rozmiar dla ceny */
+        font-size: 3em;
         margin-top: 15px;
         margin-bottom: 20px;
     }
 
     .contact p {
-        font-size: 1.3em; /* Mniejszy rozmiar */
+        font-size: 1.3em;
         line-height: 1.5;
         margin-bottom: 1em;
+    }
+
+    .youtube-video iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9; /* Zachowuje proporcje wideo */
+        margin-bottom: 20px;
+    }
+
+    .youtube-video button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .invest-button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contact-discord-btn {
+        font-size: 1em;
+        padding: 12px 30px;
+        margin-bottom: 20px;
+    }
+
+    .contact-avatar {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+    }
+
+    .contact-lead {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .contact-nick {
+        font-size: 1.1em;
+    }
+
+    .contact-meta {
+        font-size: 0.9em;
+    }
+
+    .opinion-card-large {
+        padding: 20px;
+        max-width: 90vw;
+    }
+
+    .opinion-card-large .opinion-author {
+        font-size: 1.5em;
+    }
+
+    .opinion-card-large .opinion-subs {
+        font-size: 0.9em;
+        margin-bottom: 12px;
+    }
+
+    .opinion-card-large .opinion-text {
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    .opinion-card-small {
+        padding: 15px;
+        max-width: 280px;
+    }
+
+    .opinion-text {
+        font-size: 1em;
+    }
+
+    .opinion-avatar {
+        width: 70px !important;
+        height: 70px !important;
+        margin-bottom: 10px;
+    }
+
+    .opinion-subrow {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .intro-text img,
+    .ebook-item img,
+    .additional-content .content-item img,
+    .package-deal img,
+    .guarantee img {
+        max-width: 90%;
+    }
+
+    /* Specyficzne obrazy */
+    .ebook-przerobkowy .ebook-item img[alt="Ebook 2 Part 2 Cover"] {
+        max-width: 90%;
+    }
+
+    .ebook-przerobkowy .ebook-item img[alt="Ebook 2 Part 3 Cover"] {
+        max-width: 100%;
+    }
+
+    .ebook-zamknieta .ebook-item img {
+        max-width: 50%;
+    }
+
+    .ebook-shorts .ebook-item img[alt="Ebook 4 Part 1 Cover"] {
+        max-width: 95%;
+    }
+
+    .ebook-niespodzianka .ebook-item img {
+        max-width: 90%;
+    }
+
+    .additional-content .content-item img[alt="Bonus Material 2"] {
+        max-width: 60%;
+    }
+
+    .package-deal img {
+        max-width: 100%;
+    }
+}
+
+/* Opcjonalnie: Media query dla tabletów (768px–1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .ebook-item h3 {
+        font-size: 2.2em;
+    }
+
+    .package-deal .current-price {
+        font-size: 4em;
+    }
+
+    .youtube-video button {
+        font-size: 1.5em;
+    }
+
+    .invest-button {
+        font-size: 1.5em;
+    }
+
+    .contact-discord-btn {
+        font-size: 1.2em;
     }
 }
 
