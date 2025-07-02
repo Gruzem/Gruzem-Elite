@@ -1,0 +1,481 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 90px; /* Add padding to body to prevent content going under fixed header. Adjust this value based on final header height. */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 0px 20px; /* Reduced vertical padding */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed; /* Make header sticky */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+header h1 {
+    margin-left: 15px;
+    font-size: 2.5em;
+    color: gold;
+}
+
+h2 {
+    color: gold;
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.logo {
+    max-width: 70px; /* Reduced logo size */
+    margin-top: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #1a1a1a; /* Very dark grey, almost black */
+}
+
+section:nth-of-type(even) {
+    background-color: black;
+}
+
+.youtube-video {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: -60px; /* Pull YouTube section up to fill the gap */
+    padding-top: 80px; /* Add back padding to content within the section */
+   /* box-shadow: 0 0 1000px 30px gold; *//* Wider, more prominent glow */ 
+    position: relative; /* Needed for box-shadow to apply correctly in some browsers */
+    z-index: 1; /* Ensure it's above other sections if they have shadows */
+}
+
+.youtube-video iframe {
+    width: 1000px;
+    height: 560px;
+    max-width: 100%;
+    box-shadow: 0 0 300px 100px gold;
+    margin-bottom: 30px;
+}
+
+.youtube-video button {
+    padding: 15px 30px;
+    font-size: 1.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youtube-video button:hover {
+    background-color: darkgoldenrod;
+}
+
+.youtube-video img {
+    max-width: 60%; /* Adjusted size for the package image */
+    height: auto;
+    margin-top: 20px;
+}
+
+.intro-text p {
+    text-align: left;
+    font-size: 1.9em; /* Adjusted to 2em */
+    line-height: 1.8;
+    margin-bottom: 2em;
+}
+
+.intro-text img {
+    max-width: 70%; /* Increased from 60% as user requested larger */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: block; /* Ensure it's a block element for margin: auto to work */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ebook-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ebook-item h3 {
+    color: gold;
+    font-size: 3em; /* Adjusted from 4em/5em to 3em */
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.ebook-item h4 {
+    color: gold;
+    font-size: 1.5em; /* Adjusted from 4em/5em to 3em */
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.ebook-item img {
+    max-width: 70%; /* Default for ebook items */
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ebook-item p {
+    font-size: 1.9em; /* Adjusted to 2em */
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.additional-content .content-item, 
+.package-deal, 
+.guarantee {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.additional-content .content-item img,
+.package-deal img,
+.guarantee img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.additional-content .content-item p,
+.package-deal p,
+.guarantee p {
+    font-size: 1.9em; /* Adjusted to 2em */
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.history-content p {
+    font-size: 1.9em; /* Adjusted to 2em */
+    line-height: 1.7;
+    margin-bottom: 2em;
+}
+
+.package-deal .market-value {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.package-deal .market-value span {
+    font-weight: bold;
+    color: gold;
+}
+
+.package-deal .current-price {
+    font-size: 6em; /* Large and visible price */
+    color: gold;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.invest-button {
+    padding: 15px 30px;
+    font-size: 1.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease;
+    display: block; /* Make it a block element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.invest-button:hover {
+    background-color: darkgoldenrod;
+}
+
+.contact p {
+    font-size: 2em; /* Adjusted to 2em */
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+}
+
+.contact a {
+    color: gold; /* Discord link color */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: darkgoldenrod;
+}
+
+footer {
+    text-align: left;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+.section-inner-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px; /* Horizontal padding for content */
+}
+
+/* Specific image adjustments based on user feedback */
+
+/* ranking VidIQ (przeróbkowy geniusz section) */
+.ebook-przerobkowy .ebook-item img[alt="Ebook 2 Part 2 Cover"] {
+    max-width: 80%; /* Slightly larger */
+}
+
+/* moje statystyki (przeróbkowy geniusz section) */
+.ebook-przerobkowy .ebook-item img[alt="Ebook 2 Part 3 Cover"] {
+    max-width: 100%; /* Slightly larger */
+}
+
+/* zamknięta grupa */
+.ebook-zamknieta .ebook-item img {
+    max-width: 37%; /* Decreased from 70% */
+}
+
+/* instrukcja viralowego shortsa */
+.ebook-shorts .ebook-item img[alt="Ebook 4 Part 1 Cover"] {
+    max-width: 90%; /* Increased from 70% */
+}
+
+/* słownik copywritera */
+.ebook-niespodzianka .ebook-item img {
+    max-width: 80%; /* Slightly larger from 70% */
+}
+
+/* obraz ile czasu oszczędzasz (czas_złoty.png) */
+.additional-content .content-item img[alt="Bonus Material 2"] {
+    max-width: 50%; /* Decreased from 70% */
+}
+
+/* pakiet gruzem (in package-deal section) */
+.package-deal img {
+    max-width: 100%; /* Increased from 70% */
+}
+
+/* Opinie klientów - poprawki */
+.opinions-row.opinions-column {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+}
+
+.opinion-card-large, .opinion-card-small {
+    border: 2px solid #444;
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opinion-card-large {
+    width: 100%;
+    max-width: 700px;
+    background: #222;
+    border-radius: 16px;
+    padding: 40px 48px 32px 48px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.opinion-card-large .opinion-stats {
+    width: 100%;
+    max-width: 880px;
+    margin: 18px 0 24px 0;
+    border-radius: 12px;
+}
+
+.opinion-subrow {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.opinion-card-small {
+    background: #232323;
+    border-radius: 12px;
+    padding: 22px 16px 16px 16px;
+    max-width: 320px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.opinion-avatar {
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: none;
+    background: gold;
+}
+
+.opinion-card-small .opinion-avatar {
+    margin-bottom: 10px;
+}
+
+.opinion-card-large .opinion-author {
+    font-size: 2em;
+    font-weight: 900;
+    color: gold;
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.opinion-card-large .opinion-subs {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.opinion-text {
+    font-size: 1.2em;
+    color: #eee;
+    margin: 0 auto 0 auto;
+    max-width: 90%;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.opinion-card-large .opinion-text {
+    max-width: 600px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1200px) {
+    .opinion-subrow {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .opinion-card-large {
+        max-width: 98vw;
+        padding: 24px 6vw 24px 6vw;
+    }
+}
+
+/* Sekcja kontakt / Jak zakupić? */
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+
+.contact-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    background: #222;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+}
+
+.contact-lead {
+    font-size: 1.5em;
+    color: #eee;
+    margin-bottom: 32px;
+    margin-top: 0;
+    max-width: 520px;
+}
+
+.contact-discord-btn {
+    display: inline-block;
+    background: gold;
+    color: #111;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 18px 44px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    margin-top: 0;
+    text-decoration: none;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.12);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.contact-discord-btn:hover {
+    background: #ffd700;
+    color: #000;
+    box-shadow: 0 4px 100px 40px rgba(255,215,0,0.18);
+}
+
+.contact-meta {
+    color: #aaa;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.contact-nick {
+    color: gold;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+} 
