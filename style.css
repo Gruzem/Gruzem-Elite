@@ -416,6 +416,69 @@ footer {
     }
 }
 
+@media (max-width: 1200px) {
+    .opinion-subrow {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .opinion-card-large {
+        max-width: 98vw;
+        padding: 24px 6vw 24px 6vw;
+    }
+}
+
+/* Media query dla telefonów (ekrany < 768px) */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Mniejszy rozmiar */
+        margin-left: 10px; /* Mniejszy margines */
+    }
+
+    h2 {
+        font-size: 2em; /* Mniejszy rozmiar */
+        margin-bottom: 30px; /* Mniejszy margines */
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 1.5em; /* Mniejszy rozmiar */
+    }
+
+    .ebook-item h3 {
+        font-size: 1.8em; /* Mniejszy rozmiar */
+        margin-bottom: 15px;
+    }
+
+    .ebook-item h4 {
+        font-size: 1.2em; /* Mniejszy rozmiar */
+        margin-bottom: 15px;
+    }
+
+    .intro-text p,
+    .ebook-item p,
+    .additional-content .content-item p,
+    .package-deal p,
+    .guarantee p,
+    .history-content p {
+        font-size: 1.2em; /* Mniejszy rozmiar dla paragrafów */
+        line-height: 1.5; /* Mniejszy odstęp między liniami */
+        margin-bottom: 1.5em;
+    }
+
+    .package-deal .current-price {
+        font-size: 3em; /* Znacznie mniejszy rozmiar dla ceny */
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        font-size: 1.3em; /* Mniejszy rozmiar */
+        line-height: 1.5;
+        margin-bottom: 1em;
+    }
+}
+
 /* Sekcja kontakt / Jak zakupić? */
 .contact-box {
     display: flex;
